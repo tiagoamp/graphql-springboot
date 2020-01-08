@@ -1,0 +1,27 @@
+type Series {
+	id: ID!,
+	name: String,
+	nrOfSeasons: Int
+}
+
+type SeriesCharacter {
+	id: ID!,
+	name: String,
+	nickname: String,
+	occupation: String,
+	dateofbirth: String,
+	series: Series
+}
+
+
+type Query {
+	characters:[SeriesCharacter]
+	character(id: ID):SeriesCharacter
+	allSeries:[Series]
+	series(id: ID):Series
+}
+
+type Mutation {
+	createSeries(name: String!, nrOfSeasons: Int!):Series
+	createCharacter(name: String!, nickname: String!, occupation: String; birthday: String, seriesId: Int):SeriesCharacter
+}
