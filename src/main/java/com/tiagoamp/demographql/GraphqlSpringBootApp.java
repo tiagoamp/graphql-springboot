@@ -10,14 +10,4 @@ public class GraphqlSpringBootApp {
 		SpringApplication.run(GraphqlSpringBootApp.class, args);
 	}
 	
-	
-//	@Bean
-//	public CommandLineRunner demo(AuthorRepository authorRepository, BookRepository bookRepository) {
-//		return (args) -> {
-//			Author author = new Author("Herbert", "Schildt");
-//			authorRepository.save(author);
-//
-//			bookRepository.save(new Book("Java: A Beginner's Guide, Sixth Edition", "0071809252", 728, author));
-//		};
-//	}
 }
